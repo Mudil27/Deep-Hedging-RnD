@@ -1,0 +1,34 @@
+window   0  2017-11-16  q  32.54  payoff 110.17  PL deep   -1.29  BS   +6.05  | sim CVaR deep 27.63 BS 30.54  | 60000 steps 202s
+window   1  2017-11-10  q  26.60  payoff  98.20  PL deep   -5.33  BS   +1.05  | sim CVaR deep 29.74 BS 32.83  | 60000 steps 163s
+window   2  2017-11-06  q  24.18  payoff  90.34  PL deep   -6.76  BS   -1.29  | sim CVaR deep 31.20 BS 34.16  | 60000 steps 161s
+window   3  2017-10-30  q  27.05  payoff  91.28  PL deep   -4.37  BS   +1.64  | sim CVaR deep 31.29 BS 34.47  | 60000 steps 89s
+window   4  2017-10-23  q  21.88  payoff  64.59  PL deep   -4.62  BS   -2.98  | sim CVaR deep 35.69 BS 38.93  | 60000 steps 95s
+window   5  2017-10-16  q  23.21  payoff  69.40  PL deep   -1.78  BS   +1.34  | sim CVaR deep 32.01 BS 35.20  | 60000 steps 104s
+window   6  2017-10-10  q  23.96  payoff  48.39  PL deep   +5.10  BS   +7.04  | sim CVaR deep 31.47 BS 34.93  | 60000 steps 92s
+window   7  2017-10-03  q  23.13  payoff  44.29  PL deep   +4.19  BS   +5.06  | sim CVaR deep 32.25 BS 35.34  | 60000 steps 88s
+window   8  2017-09-26  q  25.85  payoff  93.80  PL deep   -2.61  BS   +1.34  | sim CVaR deep 30.65 BS 33.57  | 54000 steps 79s
+window   9  2017-09-19  q  24.25  payoff  68.61  PL deep   -1.26  BS   +1.54  | sim CVaR deep 31.01 BS 34.24  | 60000 steps 98s
+Traceback (most recent call last):
+  File "D:\RnD- Prof Baskar\Implementation-S&P500\experiments\exp_B_30d.py", line 84, in <module>
+    model, info = train_deep_hedge(
+                  ~~~~~~~~~~~~~~~~^
+        S_tr, S_va, K, q, kind="cvar", alpha=args.alpha, lr=args.lr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        min_steps=args.warm_min_steps if warm else args.min_steps,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        init_state=prev_state if warm else None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\RnD- Prof Baskar\Implementation-S&P500\src\train.py", line 131, in train_deep_hedge
+    static_S.copy_(S_train[idx])
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+RuntimeError: CUDA error: an illegal memory access was encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+=== attempt 1: 10 windows done, (re)starting Sun Oct 25 23:28:39 IST 2026
+window  10  2017-09-12  q  28.72  payoff  72.65  PL deep   +1.17  BS   +5.79  | sim CVaR deep 29.32 BS 32.17  | 58000 steps 94s
+window  11  2017-09-05  q  26.02  payoff 101.51  PL deep   -9.14  BS   -1.86  | sim CVaR deep 35.68 BS 39.18  | 60000 steps 146s
+window  12  2017-08-28  q  35.83  payoff 106.40  PL deep   +1.59  BS   +9.35  | sim CVaR deep 24.12 BS 27.23  | 60000 steps 238s
+window  13  2017-08-21  q  56.32  payoff 106.21  PL deep  +18.38  BS  +30.92  | sim CVaR deep 14.54 BS 18.68  | 60000 steps 255s

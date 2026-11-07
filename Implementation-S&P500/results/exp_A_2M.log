@@ -1,0 +1,42 @@
+today 2017-01-19  S0 2263.69  sigma0 8.01%  q 70.54
+simulated 3,200,000 paths in 6s
+  step    5000  train  48261.097  val  55563.559  (0.5 min)
+  step   10000  train  14726.287  val 176885.734  (1.0 min)
+  step   15000  train   8968.193  val  84196.516  (1.5 min)
+  step   20000  train   7439.506  val 116165.617  (1.9 min)
+  step   25000  train   6829.657  val 307418.750  (2.4 min)
+  step   30000  train   6164.461  val  55360.941  (2.9 min)
+  step   35000  train   5348.528  val   9929.582  (3.4 min)
+  step   40000  train   4713.743  val   7997.549  (3.9 min)
+  step   45000  train   4445.859  val  15666.107  (4.4 min)
+  step   50000  train   4026.436  val  22178.201  (4.9 min)
+  step   55000  train   3919.088  val 162303.094  (5.4 min)
+  step   60000  train   3886.441  val 254446.297  (5.9 min)
+  step   65000  train   3726.512  val   5170.066  (6.3 min)
+  step   70000  train   3734.460  val  27510.801  (6.8 min)
+  step   75000  train   3720.214  val  31716.453  (7.3 min)
+  step   80000  train   3662.784  val  25525.791  (7.8 min)
+  step   85000  train   3536.726  val   8833.727  (8.3 min)
+  step   90000  train   3593.955  val   4320.246  (8.8 min)
+  step   95000  train   3662.066  val   5151.076  (9.3 min)
+  step  100000  train   3852.353  val   3976.559  (9.8 min)
+  step  105000  train   3625.487  val   9489.748  (10.3 min)
+  step  110000  train   3680.215  val   5287.632  (10.8 min)
+  step  115000  train   3585.664  val   4482.808  (11.3 min)
+  step  120000  train   3589.184  val   4343.566  (11.8 min)
+  step  125000  train   3626.395  val   7241.399  (12.3 min)
+  step  130000  train   3700.750  val   7129.119  (12.8 min)
+
+metric                             Deep hedge  Black-Scholes
+mean P&L                              -31.273        -40.923
+std                                    53.829         51.586
+MSE                                  3875.512       4335.828
+RMSE                                   62.254         65.847
+CVaR0.75 (loss)                        92.235        100.674
+mean of losses E[min(PL,0)]           -33.099        -41.399
+1% quantile                          -241.923       -246.224
+5% quantile                          -119.657       -123.681
+median                                -18.617        -27.964
+
+MSE reduction of deep hedge vs BS: 10.6%   (paper: ~20%)
+saved to D:\RnD- Prof Baskar\Implementation-S&P500\results\exp_A_2M

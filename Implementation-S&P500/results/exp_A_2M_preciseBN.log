@@ -1,0 +1,76 @@
+today 2017-01-19  S0 2263.69  sigma0 8.01%  q 70.54
+simulated 3,200,000 paths in 16s
+  step    5000  train  48261.097  val  35569.434  (0.6 min)
+  step   10000  train  14758.899  val  26519.342  (1.1 min)
+  step   15000  train   9420.427  val  39821.527  (1.6 min)
+  step   20000  train   8152.148  val  50521.242  (2.2 min)
+  step   25000  train   6920.671  val  19409.887  (2.8 min)
+  step   30000  train   6233.512  val  24260.248  (3.3 min)
+  step   35000  train   5248.892  val  25265.182  (3.9 min)
+  step   40000  train   5163.468  val  21123.693  (4.4 min)
+  step   45000  train   4384.459  val  38826.602  (5.0 min)
+  step   50000  train   4048.399  val  15569.250  (5.5 min)
+  step   55000  train   3924.914  val  16330.631  (6.1 min)
+  step   60000  train   3812.853  val  21365.496  (6.6 min)
+  step   65000  train   3732.707  val  11795.783  (7.2 min)
+  step   70000  train   3688.561  val  12308.137  (7.7 min)
+  step   75000  train   3711.253  val   8735.552  (8.3 min)
+  step   80000  train   3627.840  val   8388.631  (8.8 min)
+  step   85000  train   3534.564  val   7548.971  (9.4 min)
+  step   90000  train   3685.971  val   7233.812  (10.0 min)
+  step   95000  train   3657.677  val   7188.586  (10.5 min)
+  step  100000  train   4423.553  val   6980.705  (11.1 min)
+  step  105000  train   3718.432  val   6595.879  (11.6 min)
+  step  110000  train   3651.155  val   6530.417  (12.2 min)
+  step  115000  train   3594.346  val   5794.653  (12.7 min)
+  step  120000  train   3573.414  val   5469.419  (13.3 min)
+  step  125000  train   3658.730  val   5235.823  (13.8 min)
+  step  130000  train   3704.430  val   5135.760  (14.4 min)
+  step  135000  train   3570.619  val   5511.107  (15.0 min)
+  step  140000  train   3670.506  val   4913.067  (15.5 min)
+  step  145000  train   3632.549  val   5097.150  (16.0 min)
+  step  150000  train   3826.950  val   4931.805  (16.6 min)
+  step  155000  train   3498.207  val   5037.973  (17.1 min)
+  step  160000  train   3711.628  val   4916.747  (17.6 min)
+  step  165000  train   3539.701  val   4876.112  (18.2 min)
+  step  170000  train   3565.826  val   4549.080  (18.7 min)
+  step  175000  train   3592.771  val   4455.618  (19.2 min)
+  step  180000  train   3570.445  val   4495.200  (19.7 min)
+  step  185000  train   3582.060  val   4314.657  (20.2 min)
+  step  190000  train   3596.082  val   4352.418  (20.8 min)
+  step  195000  train   3521.588  val   4258.396  (21.3 min)
+  step  200000  train   3618.440  val   4204.095  (21.8 min)
+  step  205000  train   3538.174  val   4175.289  (22.3 min)
+  step  210000  train   3555.877  val   4404.696  (22.8 min)
+  step  215000  train   3533.015  val   4382.674  (23.3 min)
+  step  220000  train   4009.757  val   4084.889  (23.9 min)
+  step  225000  train   3622.628  val   4116.680  (24.4 min)
+  step  230000  train   3548.048  val   4174.819  (24.9 min)
+  step  235000  train   3589.171  val   4114.293  (25.4 min)
+  step  240000  train   3632.261  val   4237.099  (25.9 min)
+  step  245000  train   3536.719  val   4052.957  (26.4 min)
+  step  250000  train   3556.598  val   4034.039  (26.9 min)
+  step  255000  train   3585.125  val   4071.205  (27.4 min)
+  step  260000  train   3414.595  val   4078.330  (27.9 min)
+  step  265000  train   3525.721  val   4059.571  (28.5 min)
+  step  270000  train   3465.465  val   4041.800  (29.0 min)
+  step  275000  train   3522.474  val   3957.409  (29.5 min)
+  step  280000  train   3521.007  val   3992.560  (30.0 min)
+  step  285000  train   3473.101  val   3961.544  (30.5 min)
+  step  290000  train   3421.953  val   3958.767  (31.0 min)
+  step  295000  train   3482.394  val   3952.298  (31.5 min)
+  step  300000  train   3507.225  val   3992.848  (32.0 min)
+
+metric                             Deep hedge  Black-Scholes
+mean P&L                              -34.014        -40.923
+std                                    54.162         51.586
+MSE                                  4090.403       4335.828
+RMSE                                   63.956         65.847
+CVaR0.75 (loss)                        95.083        100.674
+mean of losses E[min(PL,0)]           -35.992        -41.399
+1% quantile                          -240.030       -246.224
+5% quantile                          -120.977       -123.681
+median                                -22.822        -27.964
+
+MSE reduction of deep hedge vs BS: 5.7%   (paper: ~20%)
+saved to D:\RnD- Prof Baskar\Implementation-S&P500\results\exp_A_2M_preciseBN

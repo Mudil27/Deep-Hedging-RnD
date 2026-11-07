@@ -1,0 +1,6 @@
+windows 0..49: prep 28s, total 615s | real PL deep +6.66 BS +8.75 | sim CVaR deep 29.24 BS 31.75
+windows 50..99: prep 28s, total 646s | real PL deep +4.35 BS +5.53 | sim CVaR deep 24.97 BS 27.59
+windows 100..149: prep 28s, total 833s | real PL deep +4.59 BS +1.46 | sim CVaR deep 23.79 BS 26.83
+windows 150..199: prep 27s, total 861s | real PL deep +6.41 BS +4.74 | sim CVaR deep 22.08 BS 25.11
+windows 200..249: prep 72s, total 786s | real PL deep +3.66 BS +1.21 | sim CVaR deep 19.26 BS 21.68
+windows 250..299: prep 16s, total 47255s | real PL deep -0.08 BS -1.68 | sim CVaR deep 17.37 BS 18.77
